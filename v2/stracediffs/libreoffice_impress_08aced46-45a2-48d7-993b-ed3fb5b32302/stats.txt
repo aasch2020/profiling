@@ -1,0 +1,68 @@
+task        : libreoffice_impress_08aced46-45a2-48d7-993b-ed3fb5b32302
+agent_root  : runs_strace6/osworld-sample50
+human_dir   : libreimpress
+human_root  : /home/ubntu/os4agent/profiling
+
+[syscalls]
+  agent_unique     : 96
+  human_unique     : 103
+  shared           : 75
+  agent_only       : 21
+  human_only       : 28
+  union            : 124
+  agent_coverage   : 78.12%   (shared / agent_unique)
+  human_coverage   : 72.82%   (shared / human_unique)
+  jaccard          : 60.48%   (shared / union)
+  agent_only_pct_a : 21.88%   (agent_only / agent_unique)
+  human_only_pct_h : 27.18%   (human_only / human_unique)
+
+[files (raw)]
+  agent_unique     : 633
+  human_unique     : 2413
+  shared           : 185
+  agent_only       : 448
+  human_only       : 2228
+  union            : 2861
+  agent_coverage   : 29.23%   (shared / agent_unique)
+  human_coverage   : 7.67%   (shared / human_unique)
+  jaccard          : 6.47%   (shared / union)
+  agent_only_pct_a : 70.77%   (agent_only / agent_unique)
+  human_only_pct_h : 92.33%   (human_only / human_unique)
+
+[files (normalized)]
+  agent_unique     : 449
+  human_unique     : 1920
+  shared           : 175
+  agent_only       : 274
+  human_only       : 1745
+  union            : 2194
+  agent_coverage   : 38.98%   (shared / agent_unique)
+  human_coverage   : 9.11%   (shared / human_unique)
+  jaccard          : 7.98%   (shared / union)
+  agent_only_pct_a : 61.02%   (agent_only / agent_unique)
+  human_only_pct_h : 90.89%   (human_only / human_unique)
+
+[human-only top 5 dirs]
+      817 /config/.config
+      326 /usr/lib
+      226 /lib/x86_64-linux-gnu
+      177 /usr/share
+       93 /config/.cache
+[human-only top 5 exts]
+      751 .png
+       78 .so
+       72 .conf
+       70 .0
+       60 .1
+[agent-only top 5 dirs]
+      116 /config/.config
+       90 /usr/lib
+       42 /lsiopy/lib
+        4 /usr/bin
+        2 /attr/apparmor
+[agent-only top 5 exts]
+      111 .png
+       76 .pyc
+       34 .so
+        8 .0
+        1 .txt

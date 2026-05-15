@@ -1,0 +1,11 @@
+chmod
+epoll_create
+fallocate
+fchmod
+fdatasync
+getppid
+inotify_add_watch
+kill
+mlock
+socketpair
+umask

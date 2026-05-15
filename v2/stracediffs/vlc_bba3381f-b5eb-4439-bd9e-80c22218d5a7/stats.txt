@@ -1,0 +1,68 @@
+task        : vlc_bba3381f-b5eb-4439-bd9e-80c22218d5a7
+agent_root  : runs_strace6/osworld-sample50
+human_dir   : vlc
+human_root  : /home/ubntu/os4agent/profiling
+
+[syscalls]
+  agent_unique     : 90
+  human_unique     : 100
+  shared           : 89
+  agent_only       : 1
+  human_only       : 11
+  union            : 101
+  agent_coverage   : 98.89%   (shared / agent_unique)
+  human_coverage   : 89.00%   (shared / human_unique)
+  jaccard          : 88.12%   (shared / union)
+  agent_only_pct_a : 1.11%   (agent_only / agent_unique)
+  human_only_pct_h : 11.00%   (human_only / human_unique)
+
+[files (raw)]
+  agent_unique     : 842
+  human_unique     : 1531
+  shared           : 483
+  agent_only       : 359
+  human_only       : 1048
+  union            : 1890
+  agent_coverage   : 57.36%   (shared / agent_unique)
+  human_coverage   : 31.55%   (shared / human_unique)
+  jaccard          : 25.56%   (shared / union)
+  agent_only_pct_a : 42.64%   (agent_only / agent_unique)
+  human_only_pct_h : 68.45%   (human_only / human_unique)
+
+[files (normalized)]
+  agent_unique     : 616
+  human_unique     : 947
+  shared           : 396
+  agent_only       : 220
+  human_only       : 551
+  union            : 1167
+  agent_coverage   : 64.29%   (shared / agent_unique)
+  human_coverage   : 41.82%   (shared / human_unique)
+  jaccard          : 33.93%   (shared / union)
+  agent_only_pct_a : 35.71%   (agent_only / agent_unique)
+  human_only_pct_h : 58.18%   (human_only / human_unique)
+
+[human-only top 5 dirs]
+      179 /lib/x86_64-linux-gnu
+      143 /usr/lib
+       93 /usr/share
+       63 /config/.cache
+       17 /config/.config
+[human-only top 5 exts]
+       82 .so
+       51 .5
+       46 .0
+       33 .1
+       28 .mo
+[agent-only top 5 dirs]
+      105 /usr/lib
+       42 /lsiopy/lib
+       15 /usr/share
+       10 /lib/x86_64-linux-gnu
+        9 /config/.cache
+[agent-only top 5 exts]
+       76 .pyc
+       54 .so
+       10 .0
+        5 .theme
+        4 .tmp

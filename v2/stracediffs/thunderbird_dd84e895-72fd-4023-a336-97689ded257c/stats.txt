@@ -1,0 +1,68 @@
+task        : thunderbird_dd84e895-72fd-4023-a336-97689ded257c
+agent_root  : runs_strace6/osworld-sample50
+human_dir   : thunderbird
+human_root  : /home/ubntu/os4agent/profiling
+
+[syscalls]
+  agent_unique     : 110
+  human_unique     : 115
+  shared           : 86
+  agent_only       : 24
+  human_only       : 29
+  union            : 139
+  agent_coverage   : 78.18%   (shared / agent_unique)
+  human_coverage   : 74.78%   (shared / human_unique)
+  jaccard          : 61.87%   (shared / union)
+  agent_only_pct_a : 21.82%   (agent_only / agent_unique)
+  human_only_pct_h : 25.22%   (human_only / human_unique)
+
+[files (raw)]
+  agent_unique     : 995
+  human_unique     : 1985
+  shared           : 634
+  agent_only       : 361
+  human_only       : 1351
+  union            : 2346
+  agent_coverage   : 63.72%   (shared / agent_unique)
+  human_coverage   : 31.94%   (shared / human_unique)
+  jaccard          : 27.02%   (shared / union)
+  agent_only_pct_a : 36.28%   (agent_only / agent_unique)
+  human_only_pct_h : 68.06%   (human_only / human_unique)
+
+[files (normalized)]
+  agent_unique     : 814
+  human_unique     : 1417
+  shared           : 631
+  agent_only       : 183
+  human_only       : 786
+  union            : 1600
+  agent_coverage   : 77.52%   (shared / agent_unique)
+  human_coverage   : 44.53%   (shared / human_unique)
+  jaccard          : 39.44%   (shared / union)
+  agent_only_pct_a : 22.48%   (agent_only / agent_unique)
+  human_only_pct_h : 55.47%   (human_only / human_unique)
+
+[human-only top 5 dirs]
+      301 /usr/share
+       91 /config/.cache
+       68 /lib/x86_64-linux-gnu
+       67 /sys/bus
+       66 /config/.thunderbird
+[human-only top 5 exts]
+       71 .conf
+       44 .mo
+       41 .so
+       32 .1
+       28 .uuid
+[agent-only top 5 dirs]
+       62 /usr/lib
+       42 /lsiopy/lib
+       26 /config/.thunderbird
+       18 /usr/share
+        6 /proc/self
+[agent-only top 5 exts]
+       76 .pyc
+       16 .ttf
+        8 .0
+        7 .so
+        5 .sqlite

@@ -1,0 +1,14 @@
+epoll_create
+fchmod
+fstat
+fsync
+getppid
+getpriority
+inotify_rm_watch
+kill
+pause
+restart_syscall
+rt_sigsuspend
+setpriority
+socketpair
+uname

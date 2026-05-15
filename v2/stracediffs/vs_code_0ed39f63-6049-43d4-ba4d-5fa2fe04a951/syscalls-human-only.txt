@@ -1,0 +1,17 @@
+chroot
+creat
+fstat
+getpgrp
+getppid
+getpriority
+landlock_create_ruleset
+link
+lstat
+pause
+pkey_alloc
+rt_sigsuspend
+seccomp
+sendmmsg
+stat
+uname
+unshare

@@ -1,0 +1,68 @@
+task        : libreoffice_calc_d681960f-7bc3-4286-9913-a8812ba3261a
+agent_root  : runs_strace6/osworld-sample50
+human_dir   : librecalc
+human_root  : /home/ubntu/os4agent/profiling
+
+[syscalls]
+  agent_unique     : 99
+  human_unique     : 104
+  shared           : 76
+  agent_only       : 23
+  human_only       : 28
+  union            : 127
+  agent_coverage   : 76.77%   (shared / agent_unique)
+  human_coverage   : 73.08%   (shared / human_unique)
+  jaccard          : 59.84%   (shared / union)
+  agent_only_pct_a : 23.23%   (agent_only / agent_unique)
+  human_only_pct_h : 26.92%   (human_only / human_unique)
+
+[files (raw)]
+  agent_unique     : 1709
+  human_unique     : 2461
+  shared           : 296
+  agent_only       : 1413
+  human_only       : 2165
+  union            : 3874
+  agent_coverage   : 17.32%   (shared / agent_unique)
+  human_coverage   : 12.03%   (shared / human_unique)
+  jaccard          : 7.64%   (shared / union)
+  agent_only_pct_a : 82.68%   (agent_only / agent_unique)
+  human_only_pct_h : 87.97%   (human_only / human_unique)
+
+[files (normalized)]
+  agent_unique     : 335
+  human_unique     : 1890
+  shared           : 181
+  agent_only       : 154
+  human_only       : 1709
+  union            : 2044
+  agent_coverage   : 54.03%   (shared / agent_unique)
+  human_coverage   : 9.58%   (shared / human_unique)
+  jaccard          : 8.86%   (shared / union)
+  agent_only_pct_a : 45.97%   (agent_only / agent_unique)
+  human_only_pct_h : 90.42%   (human_only / human_unique)
+
+[human-only top 5 dirs]
+      852 /config/.config
+      286 /usr/lib
+      226 /lib/x86_64-linux-gnu
+      179 /usr/share
+       93 /config/.cache
+[human-only top 5 exts]
+      759 .png
+       76 .so
+       74 .0
+       72 .conf
+       56 .1
+[agent-only top 5 dirs]
+       63 /usr/lib
+       42 /lsiopy/lib
+       22 /config/.config
+        5 /usr/share
+        2 /usr/bin
+[agent-only top 5 exts]
+       76 .pyc
+       15 .png
+        8 .so
+        8 .0
+        2 .ttc

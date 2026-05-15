@@ -1,0 +1,68 @@
+task        : libreoffice_writer_0810415c-bde4-4443-9047-d5f70165a697
+agent_root  : runs_strace6/osworld-sample50
+human_dir   : librewriter
+human_root  : /home/ubntu/os4agent/profiling
+
+[syscalls]
+  agent_unique     : 97
+  human_unique     : 105
+  shared           : 76
+  agent_only       : 21
+  human_only       : 29
+  union            : 126
+  agent_coverage   : 78.35%   (shared / agent_unique)
+  human_coverage   : 72.38%   (shared / human_unique)
+  jaccard          : 60.32%   (shared / union)
+  agent_only_pct_a : 21.65%   (agent_only / agent_unique)
+  human_only_pct_h : 27.62%   (human_only / human_unique)
+
+[files (raw)]
+  agent_unique     : 867
+  human_unique     : 2342
+  shared           : 242
+  agent_only       : 625
+  human_only       : 2100
+  union            : 2967
+  agent_coverage   : 27.91%   (shared / agent_unique)
+  human_coverage   : 10.33%   (shared / human_unique)
+  jaccard          : 8.16%   (shared / union)
+  agent_only_pct_a : 72.09%   (agent_only / agent_unique)
+  human_only_pct_h : 89.67%   (human_only / human_unique)
+
+[files (normalized)]
+  agent_unique     : 528
+  human_unique     : 1832
+  shared           : 200
+  agent_only       : 328
+  human_only       : 1632
+  union            : 2160
+  agent_coverage   : 37.88%   (shared / agent_unique)
+  human_coverage   : 10.92%   (shared / human_unique)
+  jaccard          : 9.26%   (shared / union)
+  agent_only_pct_a : 62.12%   (agent_only / agent_unique)
+  human_only_pct_h : 89.08%   (human_only / human_unique)
+
+[human-only top 5 dirs]
+      809 /config/.config
+      252 /usr/lib
+      224 /lib/x86_64-linux-gnu
+      178 /usr/share
+       93 /config/.cache
+[human-only top 5 exts]
+      747 .png
+       76 .so
+       74 .conf
+       70 .0
+       56 .1
+[agent-only top 5 dirs]
+      146 /config/.config
+      110 /usr/lib
+       42 /lsiopy/lib
+        5 /usr/share
+        4 /usr/bin
+[agent-only top 5 exts]
+      140 .png
+       76 .pyc
+       33 .so
+       17 .ui
+        8 .0

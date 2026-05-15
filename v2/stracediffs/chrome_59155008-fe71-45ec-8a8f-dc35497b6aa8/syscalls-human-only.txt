@@ -1,0 +1,6 @@
+fchmod
+fstat
+pause
+rt_sigsuspend
+shmdt
+uname
