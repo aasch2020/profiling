@@ -1,0 +1,68 @@
+task        : libreoffice_impress_08aced46-45a2-48d7-993b-ed3fb5b32302
+agent_root  : runs_strace7/osworld-sample50
+human_dir   : libreimpress
+human_root  : /home/ubntu/os4agent/profiling
+
+[syscalls]
+  agent_unique     : 110
+  human_unique     : 103
+  shared           : 85
+  agent_only       : 25
+  human_only       : 18
+  union            : 128
+  agent_coverage   : 77.27%   (shared / agent_unique)
+  human_coverage   : 82.52%   (shared / human_unique)
+  jaccard          : 66.41%   (shared / union)
+  agent_only_pct_a : 22.73%   (agent_only / agent_unique)
+  human_only_pct_h : 17.48%   (human_only / human_unique)
+
+[files (raw)]
+  agent_unique     : 2453
+  human_unique     : 2413
+  shared           : 1032
+  agent_only       : 1421
+  human_only       : 1381
+  union            : 3834
+  agent_coverage   : 42.07%   (shared / agent_unique)
+  human_coverage   : 42.77%   (shared / human_unique)
+  jaccard          : 26.92%   (shared / union)
+  agent_only_pct_a : 57.93%   (agent_only / agent_unique)
+  human_only_pct_h : 57.23%   (human_only / human_unique)
+
+[files (normalized)]
+  agent_unique     : 2032
+  human_unique     : 1920
+  shared           : 927
+  agent_only       : 1105
+  human_only       : 993
+  union            : 3025
+  agent_coverage   : 45.62%   (shared / agent_unique)
+  human_coverage   : 48.28%   (shared / human_unique)
+  jaccard          : 30.64%   (shared / union)
+  agent_only_pct_a : 54.38%   (agent_only / agent_unique)
+  human_only_pct_h : 51.72%   (human_only / human_unique)
+
+[human-only top 5 dirs]
+      750 /config/.config
+       75 /usr/lib
+       46 /config/.cache
+       36 /usr/share
+       35 /tmp/lu12471dk0v.tmp
+[human-only top 5 exts]
+      749 .png
+       55 .tmp
+       23 .otp
+       20 .so
+       16 .mo
+[agent-only top 5 dirs]
+      667 /config/.config
+      165 /usr/share
+      107 /usr/lib
+       42 /lsiopy/lib
+       14 /lib/x86_64-linux-gnu
+[agent-only top 5 exts]
+      673 .png
+      118 .desktop
+       76 .pyc
+       51 .so
+       28 .mo

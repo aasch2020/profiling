@@ -1,0 +1,68 @@
+task        : vs_code_0ed39f63-6049-43d4-ba4d-5fa2fe04a951
+agent_root  : runs_strace7/osworld-sample50
+human_dir   : vscode
+human_root  : /home/ubntu/os4agent/profiling
+
+[syscalls]
+  agent_unique     : 143
+  human_unique     : 126
+  shared           : 112
+  agent_only       : 31
+  human_only       : 14
+  union            : 157
+  agent_coverage   : 78.32%   (shared / agent_unique)
+  human_coverage   : 88.89%   (shared / human_unique)
+  jaccard          : 71.34%   (shared / union)
+  agent_only_pct_a : 21.68%   (agent_only / agent_unique)
+  human_only_pct_h : 11.11%   (human_only / human_unique)
+
+[files (raw)]
+  agent_unique     : 4126
+  human_unique     : 4307
+  shared           : 2918
+  agent_only       : 1208
+  human_only       : 1389
+  union            : 5515
+  agent_coverage   : 70.72%   (shared / agent_unique)
+  human_coverage   : 67.75%   (shared / human_unique)
+  jaccard          : 52.91%   (shared / union)
+  agent_only_pct_a : 29.28%   (agent_only / agent_unique)
+  human_only_pct_h : 32.25%   (human_only / human_unique)
+
+[files (normalized)]
+  agent_unique     : 3363
+  human_unique     : 3313
+  shared           : 2718
+  agent_only       : 645
+  human_only       : 595
+  union            : 3958
+  agent_coverage   : 80.82%   (shared / agent_unique)
+  human_coverage   : 82.04%   (shared / human_unique)
+  jaccard          : 68.67%   (shared / union)
+  agent_only_pct_a : 19.18%   (agent_only / agent_unique)
+  human_only_pct_h : 17.96%   (human_only / human_unique)
+
+[human-only top 5 dirs]
+      368 /dev/shm
+      296 /etc/ssl
+       61 /usr/share
+       43 /config/.cache
+       42 /config/.config
+[human-only top 5 exts]
+      149 .0
+      147 .pem
+       21 .log
+       18 .so
+       12 .mo
+[agent-only top 5 dirs]
+      245 /dev/shm
+      177 /usr/lib
+      104 /lib/x86_64-linux-gnu
+       69 /usr/share
+       52 /config/.config
+[agent-only top 5 exts]
+       92 .so
+       76 .pyc
+       60 .5
+       40 .svg
+       24 .0

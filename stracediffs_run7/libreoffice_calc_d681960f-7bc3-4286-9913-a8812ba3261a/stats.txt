@@ -1,0 +1,68 @@
+task        : libreoffice_calc_d681960f-7bc3-4286-9913-a8812ba3261a
+agent_root  : runs_strace7/osworld-sample50
+human_dir   : librecalc
+human_root  : /home/ubntu/os4agent/profiling
+
+[syscalls]
+  agent_unique     : 108
+  human_unique     : 104
+  shared           : 82
+  agent_only       : 26
+  human_only       : 22
+  union            : 130
+  agent_coverage   : 75.93%   (shared / agent_unique)
+  human_coverage   : 78.85%   (shared / human_unique)
+  jaccard          : 63.08%   (shared / union)
+  agent_only_pct_a : 24.07%   (agent_only / agent_unique)
+  human_only_pct_h : 21.15%   (human_only / human_unique)
+
+[files (raw)]
+  agent_unique     : 2990
+  human_unique     : 2461
+  shared           : 1095
+  agent_only       : 1895
+  human_only       : 1366
+  union            : 4356
+  agent_coverage   : 36.62%   (shared / agent_unique)
+  human_coverage   : 44.49%   (shared / human_unique)
+  jaccard          : 25.14%   (shared / union)
+  agent_only_pct_a : 63.38%   (agent_only / agent_unique)
+  human_only_pct_h : 55.51%   (human_only / human_unique)
+
+[files (normalized)]
+  agent_unique     : 1973
+  human_unique     : 1890
+  shared           : 888
+  agent_only       : 1085
+  human_only       : 1002
+  union            : 2975
+  agent_coverage   : 45.01%   (shared / agent_unique)
+  human_coverage   : 46.98%   (shared / human_unique)
+  jaccard          : 29.85%   (shared / union)
+  agent_only_pct_a : 54.99%   (agent_only / agent_unique)
+  human_only_pct_h : 53.02%   (human_only / human_unique)
+
+[human-only top 5 dirs]
+      788 /config/.config
+       67 /lib/x86_64-linux-gnu
+       51 /config/.cache
+       38 /usr/share
+       19 /usr/lib
+[human-only top 5 exts]
+      757 .png
+       40 .5
+       21 .tmp
+       18 .so
+       16 .mo
+[agent-only top 5 dirs]
+      690 /config/.config
+      164 /usr/share
+       79 /usr/lib
+       42 /lsiopy/lib
+       16 /lib/x86_64-linux-gnu
+[agent-only top 5 exts]
+      699 .png
+      109 .desktop
+       76 .pyc
+       30 .mo
+       24 .so

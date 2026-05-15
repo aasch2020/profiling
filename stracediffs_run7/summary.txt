@@ -1,0 +1,144 @@
+TASK                                                       SYS A/H/shared/C       FILES A/H/shared/C         human-dir
+---------------------------------------------------------- ---------------------- -------------------------- ---------
+chrome_59155008-fe71-45ec-8a8f-dc35497b6aa8                113/113/112/0.99       2348/2265/1310/0.56        chrome
+  human-only file kinds (top 5 dirs / extensions):
+    dir       46 /proc/1231
+    dir       28 /usr/share
+    dir       27 /proc/1350
+    dir       20 /proc/1352
+    dir       18 /config/.config
+    ext       12 .mo
+    ext        7 .so
+    ext        6 .tmp
+    ext        6 .1
+    ext        4 .png
+gimp_7a4deb26-d57d-4ea9-9a73-630f66a7b568                  109/98/86/0.79         3013/3062/2402/0.80        gimp
+  human-only file kinds (top 5 dirs / extensions):
+    dir       75 /usr/share
+    dir       50 /config/.cache
+    dir       18 /usr/lib
+    dir       14 /lib/x86_64-linux-gnu
+    dir        9 /config/.config
+    ext       40 .svg
+    ext       19 .tmp
+    ext       19 .so
+    ext       16 .mo
+    ext        7 .1
+libreoffice_calc_d681960f-7bc3-4286-9913-a8812ba3261a      108/104/82/0.76        2990/2461/1095/0.37        librecalc
+  human-only file kinds (top 5 dirs / extensions):
+    dir      788 /config/.config
+    dir       67 /lib/x86_64-linux-gnu
+    dir       51 /config/.cache
+    dir       38 /usr/share
+    dir       19 /usr/lib
+    ext      757 .png
+    ext       40 .5
+    ext       21 .tmp
+    ext       18 .so
+    ext       16 .mo
+libreoffice_impress_08aced46-45a2-48d7-993b-ed3fb5b32302   110/103/85/0.77        2453/2413/1032/0.42        libreimpress
+  human-only file kinds (top 5 dirs / extensions):
+    dir      750 /config/.config
+    dir       75 /usr/lib
+    dir       46 /config/.cache
+    dir       36 /usr/share
+    dir       35 /tmp/lu12471dk0v.tmp
+    ext      749 .png
+    ext       55 .tmp
+    ext       23 .otp
+    ext       20 .so
+    ext       16 .mo
+libreoffice_writer_0810415c-bde4-4443-9047-d5f70165a697    108/105/82/0.76        2533/2342/1015/0.40        librewriter
+  human-only file kinds (top 5 dirs / extensions):
+    dir      742 /config/.config
+    dir       45 /config/.cache
+    dir       35 /usr/share
+    dir       28 /usr/lib
+    dir       16 /lib/x86_64-linux-gnu
+    ext      744 .png
+    ext       23 .tmp
+    ext       21 .so
+    ext       16 .mo
+    ext        7 .1
+thunderbird_dd84e895-72fd-4023-a336-97689ded257c           124/115/98/0.79        1717/1985/1171/0.68        thunderbird
+  human-only file kinds (top 5 dirs / extensions):
+    dir      108 /usr/share
+    dir       64 /config/.thunderbird
+    dir       48 /config/.cache
+    dir       19 /usr/lib
+    dir       17 /lib/x86_64-linux-gnu
+    ext       25 .so
+    ext       21 .t1
+    ext       21 .otf
+    ext       20 .tmp
+    ext       20 .pfb
+vlc_bba3381f-b5eb-4439-bd9e-80c22218d5a7                   79/100/79/1.00         1224/1531/787/0.64         vlc
+  human-only file kinds (top 5 dirs / extensions):
+    dir       94 /lib/x86_64-linux-gnu
+    dir       49 /usr/share
+    dir       48 /usr/lib
+    dir       22 /config/.cache
+    dir       11 /config/.config
+    ext       43 .so
+    ext       42 .5
+    ext       16 .mo
+    ext       13 .1
+    ext       12 .qmlc
+vs_code_0ed39f63-6049-43d4-ba4d-5fa2fe04a951               143/126/112/0.78       4126/4307/2918/0.71        vscode
+  human-only file kinds (top 5 dirs / extensions):
+    dir      368 /dev/shm
+    dir      296 /etc/ssl
+    dir       61 /usr/share
+    dir       43 /config/.cache
+    dir       42 /config/.config
+    ext      149 .0
+    ext      147 .pem
+    ext       21 .log
+    ext       18 .so
+    ext       12 .mo
+
+=== aggregate over 8 matched task(s) ===
+  syscalls: agent_unique_sum=894  human_unique_sum=864  shared_sum=736  coverage=0.82
+  files:    agent_unique_sum=20404  human_unique_sum=20366  shared_sum=11730  coverage=0.57
+
+=== aggregate human-only files: 8636 paths (top 5) ===
+  by 2-deep dir prefix:
+       2368 /config/.config
+        430 /usr/share
+        374 /dev/shm
+        320 /config/.cache
+        296 /etc/ssl
+  by extension:
+       2268 .png
+        178 .0
+        171 .so
+        156 .tmp
+        147 .pem
+
+=== aggregate agent-only files: 8674 paths (top 5) ===
+  by 2-deep dir prefix:
+       2115 /config/.config
+        838 /usr/lib
+        819 /usr/share
+        336 /lsiopy/lib
+        287 /lib/x86_64-linux-gnu
+  by extension:
+       2070 .png
+        608 .pyc
+        364 .desktop
+        347 .so
+        180 .lm
+
+=== normalized file comparison (canonicalized /proc/<PID>, <UUID>, <HEX>, Chromium.<RND>) ===
+TASK                                                       FILES_norm A/H/shared/C    human-dir
+---------------------------------------------------------- -------------------------- ---------
+chrome_59155008-fe71-45ec-8a8f-dc35497b6aa8                1339/1235/1031/0.77        chrome
+gimp_7a4deb26-d57d-4ea9-9a73-630f66a7b568                  2689/2518/2314/0.86        gimp
+libreoffice_calc_d681960f-7bc3-4286-9913-a8812ba3261a      1973/1890/888/0.45         librecalc
+libreoffice_impress_08aced46-45a2-48d7-993b-ed3fb5b32302   2032/1920/927/0.46         libreimpress
+libreoffice_writer_0810415c-bde4-4443-9047-d5f70165a697    2237/1832/926/0.41         librewriter
+thunderbird_dd84e895-72fd-4023-a336-97689ded257c           1426/1417/1085/0.76        thunderbird
+vlc_bba3381f-b5eb-4439-bd9e-80c22218d5a7                   972/947/696/0.72           vlc
+vs_code_0ed39f63-6049-43d4-ba4d-5fa2fe04a951               3363/3313/2718/0.81        vscode
+
+  aggregate normalized: agent_unique=16031  human_unique=15072  shared=10585  coverage=0.66

@@ -1,0 +1,17 @@
+epoll_create
+fallocate
+fchmod
+fstat
+getpgrp
+getppid
+mincore
+pause
+restart_syscall
+rt_sigsuspend
+sched_setaffinity
+sched_setscheduler
+shmdt
+symlink
+uname
+unshare
+waitid

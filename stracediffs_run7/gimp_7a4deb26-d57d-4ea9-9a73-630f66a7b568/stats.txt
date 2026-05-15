@@ -1,0 +1,68 @@
+task        : gimp_7a4deb26-d57d-4ea9-9a73-630f66a7b568
+agent_root  : runs_strace7/osworld-sample50
+human_dir   : gimp
+human_root  : /home/ubntu/os4agent/profiling
+
+[syscalls]
+  agent_unique     : 109
+  human_unique     : 98
+  shared           : 86
+  agent_only       : 23
+  human_only       : 12
+  union            : 121
+  agent_coverage   : 78.90%   (shared / agent_unique)
+  human_coverage   : 87.76%   (shared / human_unique)
+  jaccard          : 71.07%   (shared / union)
+  agent_only_pct_a : 21.10%   (agent_only / agent_unique)
+  human_only_pct_h : 12.24%   (human_only / human_unique)
+
+[files (raw)]
+  agent_unique     : 3013
+  human_unique     : 3062
+  shared           : 2402
+  agent_only       : 611
+  human_only       : 660
+  union            : 3673
+  agent_coverage   : 79.72%   (shared / agent_unique)
+  human_coverage   : 78.45%   (shared / human_unique)
+  jaccard          : 65.40%   (shared / union)
+  agent_only_pct_a : 20.28%   (agent_only / agent_unique)
+  human_only_pct_h : 21.55%   (human_only / human_unique)
+
+[files (normalized)]
+  agent_unique     : 2689
+  human_unique     : 2518
+  shared           : 2314
+  agent_only       : 375
+  human_only       : 204
+  union            : 2893
+  agent_coverage   : 86.05%   (shared / agent_unique)
+  human_coverage   : 91.90%   (shared / human_unique)
+  jaccard          : 79.99%   (shared / union)
+  agent_only_pct_a : 13.95%   (agent_only / agent_unique)
+  human_only_pct_h : 8.10%   (human_only / human_unique)
+
+[human-only top 5 dirs]
+       75 /usr/share
+       50 /config/.cache
+       18 /usr/lib
+       14 /lib/x86_64-linux-gnu
+        9 /config/.config
+[human-only top 5 exts]
+       40 .svg
+       19 .tmp
+       19 .so
+       16 .mo
+        7 .1
+[agent-only top 5 dirs]
+      113 /usr/lib
+      109 /lib/x86_64-linux-gnu
+       42 /lsiopy/lib
+       17 /usr/share
+       16 /sys/devices
+[agent-only top 5 exts]
+       76 .pyc
+       48 .5
+       37 .so
+       34 .0
+       16 .1

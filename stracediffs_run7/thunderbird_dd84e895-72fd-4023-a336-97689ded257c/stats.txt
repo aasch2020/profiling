@@ -1,0 +1,68 @@
+task        : thunderbird_dd84e895-72fd-4023-a336-97689ded257c
+agent_root  : runs_strace7/osworld-sample50
+human_dir   : thunderbird
+human_root  : /home/ubntu/os4agent/profiling
+
+[syscalls]
+  agent_unique     : 124
+  human_unique     : 115
+  shared           : 98
+  agent_only       : 26
+  human_only       : 17
+  union            : 141
+  agent_coverage   : 79.03%   (shared / agent_unique)
+  human_coverage   : 85.22%   (shared / human_unique)
+  jaccard          : 69.50%   (shared / union)
+  agent_only_pct_a : 20.97%   (agent_only / agent_unique)
+  human_only_pct_h : 14.78%   (human_only / human_unique)
+
+[files (raw)]
+  agent_unique     : 1717
+  human_unique     : 1985
+  shared           : 1171
+  agent_only       : 546
+  human_only       : 814
+  union            : 2531
+  agent_coverage   : 68.20%   (shared / agent_unique)
+  human_coverage   : 58.99%   (shared / human_unique)
+  jaccard          : 46.27%   (shared / union)
+  agent_only_pct_a : 31.80%   (agent_only / agent_unique)
+  human_only_pct_h : 41.01%   (human_only / human_unique)
+
+[files (normalized)]
+  agent_unique     : 1426
+  human_unique     : 1417
+  shared           : 1085
+  agent_only       : 341
+  human_only       : 332
+  union            : 1758
+  agent_coverage   : 76.09%   (shared / agent_unique)
+  human_coverage   : 76.57%   (shared / human_unique)
+  jaccard          : 61.72%   (shared / union)
+  agent_only_pct_a : 23.91%   (agent_only / agent_unique)
+  human_only_pct_h : 23.43%   (human_only / human_unique)
+
+[human-only top 5 dirs]
+      108 /usr/share
+       64 /config/.thunderbird
+       48 /config/.cache
+       19 /usr/lib
+       17 /lib/x86_64-linux-gnu
+[human-only top 5 exts]
+       25 .so
+       21 .t1
+       21 .otf
+       20 .tmp
+       20 .pfb
+[agent-only top 5 dirs]
+       70 /usr/lib
+       57 /config/.thunderbird
+       42 /lsiopy/lib
+       22 /usr/share
+       14 /t5q2a5hp.default-release/ImapMail
+[agent-only top 5 exts]
+       76 .pyc
+       25 .sqlite
+       24 .msf
+       18 .json
+       16 .ttf

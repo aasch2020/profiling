@@ -1,0 +1,68 @@
+task        : chrome_59155008-fe71-45ec-8a8f-dc35497b6aa8
+agent_root  : runs_strace7/osworld-sample50
+human_dir   : chrome
+human_root  : /home/ubntu/os4agent/profiling
+
+[syscalls]
+  agent_unique     : 113
+  human_unique     : 113
+  shared           : 112
+  agent_only       : 1
+  human_only       : 1
+  union            : 114
+  agent_coverage   : 99.12%   (shared / agent_unique)
+  human_coverage   : 99.12%   (shared / human_unique)
+  jaccard          : 98.25%   (shared / union)
+  agent_only_pct_a : 0.88%   (agent_only / agent_unique)
+  human_only_pct_h : 0.88%   (human_only / human_unique)
+
+[files (raw)]
+  agent_unique     : 2348
+  human_unique     : 2265
+  shared           : 1310
+  agent_only       : 1038
+  human_only       : 955
+  union            : 3303
+  agent_coverage   : 55.79%   (shared / agent_unique)
+  human_coverage   : 57.84%   (shared / human_unique)
+  jaccard          : 39.66%   (shared / union)
+  agent_only_pct_a : 44.21%   (agent_only / agent_unique)
+  human_only_pct_h : 42.16%   (human_only / human_unique)
+
+[files (normalized)]
+  agent_unique     : 1339
+  human_unique     : 1235
+  shared           : 1031
+  agent_only       : 308
+  human_only       : 204
+  union            : 1543
+  agent_coverage   : 77.00%   (shared / agent_unique)
+  human_coverage   : 83.48%   (shared / human_unique)
+  jaccard          : 66.82%   (shared / union)
+  agent_only_pct_a : 23.00%   (agent_only / agent_unique)
+  human_only_pct_h : 16.52%   (human_only / human_unique)
+
+[human-only top 5 dirs]
+       46 /proc/1231
+       28 /usr/share
+       27 /proc/1350
+       20 /proc/1352
+       18 /config/.config
+[human-only top 5 exts]
+       12 .mo
+        7 .so
+        6 .tmp
+        6 .1
+        4 .png
+[agent-only top 5 dirs]
+       68 /usr/lib
+       47 /proc/1105
+       42 /lsiopy/lib
+       27 /proc/1188
+       27 /config/.cache
+[agent-only top 5 exts]
+       76 .pyc
+       13 .so
+       11 .0
+        5 .tmp
+        4 .mo

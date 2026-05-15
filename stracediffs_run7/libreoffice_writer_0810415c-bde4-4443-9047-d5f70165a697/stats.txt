@@ -1,0 +1,68 @@
+task        : libreoffice_writer_0810415c-bde4-4443-9047-d5f70165a697
+agent_root  : runs_strace7/osworld-sample50
+human_dir   : librewriter
+human_root  : /home/ubntu/os4agent/profiling
+
+[syscalls]
+  agent_unique     : 108
+  human_unique     : 105
+  shared           : 82
+  agent_only       : 26
+  human_only       : 23
+  union            : 131
+  agent_coverage   : 75.93%   (shared / agent_unique)
+  human_coverage   : 78.10%   (shared / human_unique)
+  jaccard          : 62.60%   (shared / union)
+  agent_only_pct_a : 24.07%   (agent_only / agent_unique)
+  human_only_pct_h : 21.90%   (human_only / human_unique)
+
+[files (raw)]
+  agent_unique     : 2533
+  human_unique     : 2342
+  shared           : 1015
+  agent_only       : 1518
+  human_only       : 1327
+  union            : 3860
+  agent_coverage   : 40.07%   (shared / agent_unique)
+  human_coverage   : 43.34%   (shared / human_unique)
+  jaccard          : 26.30%   (shared / union)
+  agent_only_pct_a : 59.93%   (agent_only / agent_unique)
+  human_only_pct_h : 56.66%   (human_only / human_unique)
+
+[files (normalized)]
+  agent_unique     : 2237
+  human_unique     : 1832
+  shared           : 926
+  agent_only       : 1311
+  human_only       : 906
+  union            : 3143
+  agent_coverage   : 41.39%   (shared / agent_unique)
+  human_coverage   : 50.55%   (shared / human_unique)
+  jaccard          : 29.46%   (shared / union)
+  agent_only_pct_a : 58.61%   (agent_only / agent_unique)
+  human_only_pct_h : 49.45%   (human_only / human_unique)
+
+[human-only top 5 dirs]
+      742 /config/.config
+       45 /config/.cache
+       35 /usr/share
+       28 /usr/lib
+       16 /lib/x86_64-linux-gnu
+[human-only top 5 exts]
+      744 .png
+       23 .tmp
+       21 .so
+       16 .mo
+        7 .1
+[agent-only top 5 dirs]
+      682 /config/.config
+      349 /usr/share
+      110 /usr/lib
+       42 /lsiopy/lib
+       16 /lib/x86_64-linux-gnu
+[agent-only top 5 exts]
+      691 .png
+      180 .lm
+      118 .desktop
+       76 .pyc
+       53 .so
